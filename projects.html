@@ -33,7 +33,7 @@
         img {
             max-width: 400px;
             max-height: auto;
-            float: right;
+            float: center;
             padding-bottom: 0.15in;
             padding-left: 0.15in;
         }
@@ -63,7 +63,7 @@
                 </ul>
             </div>
         </nav>
-        <h3>Education</h3>
+        <h3>Education</h3> 
         <b><i>BDes in User Experience Design at Wilfrid Laurier University</i></b>
         <br>
         I am in my second year of User Experience Design at Wilfrid Laurier University. During this time I gained skills
@@ -84,17 +84,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.js"></script>
         <script>
             $("document").ready(() => {
-                $.get("article_1.md").then((sData) => {
+                $.get("wastebin.md").then((sData) => {
                     $("#article_1").append(marked(sData));
                 });
-                $.get("article_2.md").then((sData) => {
+                $.get("hackabox.md").then((sData) => {
                     $("#article_2").append(marked(sData));
-                });
-                $.get("article_3.md").then((sData) => {
-                    $("#article_3").append(marked(sData));
-                });
-                $.get("article_4.md").then((sData) => {
-                    $("#article_4").append(marked(sData));
                 });
             });
         </script>
